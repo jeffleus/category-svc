@@ -13,10 +13,10 @@ var sport = {
 };
 
 var id = 1;
-var filter = ('1,3,5,7').split(',');
+var filter = ('1').split(',');
 console.log("FILTER: ", filter);
 
-Category.get(null, null).then(function(student) {
+Category.get(null, filter).then(function(student) {
 
 //Sport.get(null, filter).then(function(student) {
 //Sport.get('XXX').then(function(student) {
