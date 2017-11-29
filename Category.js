@@ -12,7 +12,7 @@ var sequelize = new Sequelize('FS_VATECH', Config.username, Config.password, {
 });
 
 var Category = sequelize.define('category', {
-  CateogryID: { 
+  CategoryID: { 
 	  type: Sequelize.INTEGER, 
 	  primaryKey: true, 
       autoincrement: true, 
