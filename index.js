@@ -16,20 +16,8 @@ var id = 1;
 var filter = ('1,3,5,7').split(',');
 console.log("FILTER: ", filter);
 
-Category.get(null, null).then(function(student) {
-
-//Sport.get(null, filter).then(function(student) {
-//Sport.get('XXX').then(function(student) {
-//Sport.create(sport).then(function(student) {
-//Sport.update(sport).then(function(student) {
-//Sport.delete('XXX').then(function(result) {
-	
-//Athletes.delete(1165).then(function(result) {
-//Athletes.update(ath).then(function(student) {
-//Athletes.create(ath).then(function(student) {
-//Athletes.get(id, filter).then(function(student) {
-//	console.log(result);
-	console.log(student);
+Category.get(null, null).then(function(result) {
+	console.log(result);
 	return;
 }).catch(function(err) {
 	console.error(err);

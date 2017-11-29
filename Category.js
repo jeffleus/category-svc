@@ -1,7 +1,7 @@
 'use strict';
 var Sequelize = require('sequelize');
 var Config = require('./Config')();
-var sequelize = new Sequelize('FuelStation_STAN', Config.username, Config.password, {
+var sequelize = new Sequelize('FS_VATECH', Config.username, Config.password, {
 	host: 'callsheet-mysql.cn6x6nhayn9c.us-west-2.rds.amazonaws.com',
 	port: 3306,
     pool: {
@@ -19,7 +19,8 @@ var Category = sequelize.define('category', {
 	  field: 'CategoryID' 
   }, 
   name: { type: Sequelize.STRING, field: 'Name' }, 
-  description: { type: Sequelize.STRING, field: 'Description' }
+  description: { type: Sequelize.STRING, field: 'Description' },
+  sortOrder: { type: Sequelize.INTEGER, field: 'SortOrder' }
 }, {
 	tableName: 'Categories'
 });
